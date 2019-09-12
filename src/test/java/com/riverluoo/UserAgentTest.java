@@ -1,4 +1,4 @@
-package com.riverluoo.common;
+package com.riverluoo;
 
 import eu.bitwalker.useragentutils.Browser;
 import eu.bitwalker.useragentutils.DeviceType;
