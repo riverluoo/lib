@@ -1,0 +1,12 @@
+language: java
+jdk:
+  - oraclejdk8
+notifications:
+  email: 769789170@qq.com
+sudo: false
+script:
+  - mvn clean
+  - mvn install
+branches:
+  only:
+    - master
