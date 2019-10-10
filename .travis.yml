@@ -1,12 +1,17 @@
-language: java
+language: base
 jdk:
   - openjdk8
+  - docker
+  -
 notifications:
   email: 769789170@qq.com
-sudo: false
-script:
-  - mvn clean
-  - mvn install
+sudo: required
+
 branches:
   only:
     - master
+
+script:
+  - mvn clean
+  - mvn install
+  - docker build -t hospital-cms .
